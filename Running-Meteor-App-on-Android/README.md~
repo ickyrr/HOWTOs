@@ -17,6 +17,21 @@ Then, you can install Ubuntu Make itself:
 - And finally you use Ubuntu Make to install Android Studio and all dependencies:
 
 		umake android
+## You can also do Manual Installation:
+
+###Installing the JDK
+####On Debian/Ubuntu:
+
+		sudo apt-get update; sudo apt-get install --yes openjdk-7-jdk
+
+##32 bit libraries
+
+If you're running on a 64 bit machine, the Android SDK & emulator also needs some 32 bit libraries:
+
+##On Debian/Ubuntu:
+
+		sudo apt-get update; sudo apt-get install --yes lib32z1 lib32stdc++6
+
 ## Setting ANDROID_HOME and adding the tools directories to your PATH
 ------------------------------------
 
@@ -28,10 +43,11 @@ To do that, you can type the following commands:
 
 		export ANDROID_HOME=~/Android/Sdk - (on default installation)
 		
-		
 		export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
 
-you can test by typing		echo $ANDROID_HOME
+you can test by typing:
+
+		echo $ANDROID_HOME
 
 
 ## Add all SDK packages including System Images (for better results)

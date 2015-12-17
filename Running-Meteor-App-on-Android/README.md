@@ -70,3 +70,20 @@ you can test by typing:
 
 - The commands above will download all the necessary packages to run meteor on android emulator.
 
+#To run meteor add on android device:
+
+1. cd /project-name/
+
+2. make sure JDK and SDKs / android studio is installed on your pc
+
+3. meteor add-platform android
+
+4. meteor run android-device
+
+or
+
+		meteor run android-device --mobile-server=http://'your-ip-address:3000'
+
+or you can deploy your project to your-project.meteor.com, then
+
+		meteor run android-device --mobile-server=http://your-project.meteor.com
